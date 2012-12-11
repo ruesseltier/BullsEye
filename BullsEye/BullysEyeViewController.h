@@ -8,6 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BullysEyeViewController : UIViewController
+@interface BullysEyeViewController : UIViewController <UIAlertViewDelegate>
+
+- (IBAction)showAlert;
+
+- (IBAction)sliderMoved:(UISlider *)sender;
+
+@property (nonatomic, strong) IBOutlet UISlider *slider;
+
+@property (nonatomic, strong) IBOutlet UILabel *targetLabel;
+
+@property (nonatomic, strong) IBOutlet UILabel *scoreLabel;
+
+@property (nonatomic, strong) IBOutlet UILabel *roundLabel;
 
 @end
