@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0939F8FD1682718600F05266 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0939F8FB1682718600F05266 /* AboutViewController.m */; };
+		0939F8FE1682718600F05266 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0939F8FC1682718600F05266 /* AboutViewController.xib */; };
 		09E144C3164D6B3A00DC3225 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E144C2164D6B3A00DC3225 /* UIKit.framework */; };
 		09E144C5164D6B3A00DC3225 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E144C4164D6B3A00DC3225 /* Foundation.framework */; };
 		09E144C7164D6B3A00DC3225 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E144C6164D6B3A00DC3225 /* CoreGraphics.framework */; };
@@ -21,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0939F8FA1682718600F05266 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		0939F8FB1682718600F05266 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		0939F8FC1682718600F05266 /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 		09E144BE164D6B3A00DC3225 /* BullsEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullsEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09E144C2164D6B3A00DC3225 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		09E144C4164D6B3A00DC3225 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -88,6 +93,9 @@
 				09E144DA164D6B3A00DC3225 /* BullysEyeViewController.h */,
 				09E144DB164D6B3A00DC3225 /* BullysEyeViewController.m */,
 				09E144DD164D6B3A00DC3225 /* BullysEyeViewController.xib */,
+				0939F8FA1682718600F05266 /* AboutViewController.h */,
+				0939F8FB1682718600F05266 /* AboutViewController.m */,
+				0939F8FC1682718600F05266 /* AboutViewController.xib */,
 				09E144C9164D6B3A00DC3225 /* Supporting Files */,
 			);
 			path = BullsEye;
@@ -164,6 +172,7 @@
 				09E144D7164D6B3A00DC3225 /* Default@2x.png in Resources */,
 				09E144D9164D6B3A00DC3225 /* Default-568h@2x.png in Resources */,
 				09E144DF164D6B3A00DC3225 /* BullysEyeViewController.xib in Resources */,
+				0939F8FE1682718600F05266 /* AboutViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +186,7 @@
 				09E144CF164D6B3A00DC3225 /* main.m in Sources */,
 				09E144D3164D6B3A00DC3225 /* BullysEyeAppDelegate.m in Sources */,
 				09E144DC164D6B3A00DC3225 /* BullysEyeViewController.m in Sources */,
+				0939F8FD1682718600F05266 /* AboutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

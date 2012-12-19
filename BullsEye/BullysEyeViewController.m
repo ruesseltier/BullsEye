@@ -8,6 +8,8 @@
 
 #import "BullysEyeViewController.h"
 
+#import "AboutViewController.h"
+
 @interface BullysEyeViewController ()
 
 @end
@@ -35,10 +37,16 @@
     self.slider.value = currentValue;
 }
 
+- (void)startNewGame {
+    score = 0;
+    round = 0;
+    [self startNewRound];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	[self startNewRound];
+	[self startNewGame];
     [self updateLabels];
 }
 
@@ -94,6 +102,18 @@
 - (IBAction)sliderMoved:(UISlider*)sender
 {
     currentValue = lroundf(sender.value);
+}
+
+- (IBAction)startOver {
+    [self startNewGame];
+    [self updateLabels];
+}
+
+- (IBAction)showInfo {
+    AboutViewController *controller = [[AboutViewController alloc]
+                                       initWithNibName:@"AboutViewController" bundle:nil];
+    controller.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentViewController:controller animated:YES completion:nil];
 }
 
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex

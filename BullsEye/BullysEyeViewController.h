@@ -14,6 +14,10 @@
 
 - (IBAction)sliderMoved:(UISlider *)sender;
 
+- (IBAction)startOver;
+
+- (IBAction)showInfo;
+
 @property (nonatomic, strong) IBOutlet UISlider *slider;
 
 @property (nonatomic, strong) IBOutlet UILabel *targetLabel;
