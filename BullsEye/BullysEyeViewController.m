@@ -10,6 +10,8 @@
 
 #import "AboutViewController.h"
 
+#import <QuartzCore/QuartzCore.h>
+
 @interface BullysEyeViewController ()
 
 @end
@@ -48,6 +50,18 @@
     [super viewDidLoad];
 	[self startNewGame];
     [self updateLabels];
+    
+    UIImage *thumbImageNormal = [UIImage imageNamed:@"SliderThumb-Normal"];
+    [self.slider setThumbImage:thumbImageNormal forState:UIControlStateNormal];
+    
+    UIImage *thumbImageHighlighted = [UIImage imageNamed:@"SliderThumb-Highlighted"];
+    [self.slider setThumbImage:thumbImageHighlighted forState:UIControlStateHighlighted];
+    
+    UIImage *trackLeftImage = [[UIImage imageNamed:@"SliderTrackLeft"]stretchableImageWithLeftCapWidth:14 topCapHeight:0];
+    [self.slider setMaximumTrackImage:trackLeftImage forState:UIControlStateNormal];
+    
+    UIImage *trackRightImage = [[UIImage imageNamed:@"SliderTrackRight"]stretchableImageWithLeftCapWidth:14 topCapHeight:0];
+    [self.slider setMaximumTrackImage:trackRightImage forState:UIControlStateNormal];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)
@@ -105,8 +119,16 @@
 }
 
 - (IBAction)startOver {
+    
+    CATransition *transition = [CATransition animation];
+    transition.type = kCATransitionFade;
+    transition.duration = 1;
+    transition.timingFunction = [CAMediaTimingFunction functionWithName: kCAMediaTimingFunctionEaseOut];
+    
     [self startNewGame];
     [self updateLabels];
+    
+    [self.view.layer addAnimation:transition forKey:nil];
 }
 
 - (IBAction)showInfo {
